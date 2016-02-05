@@ -1,0 +1,121 @@
+<!-- ngc = NextGenContacts -->
+
+
+<header class="ngc-intro ngc-intro-normal ngc-bg-cover ngc-bg-fixed ngc-padding160 ngc-bg-dark">
+    <div class="ngc-dark-overlay"></div>
+
+    <!-- jQuery slider plugin for flash like effect -->
+    <div class="ngc-bg-slider-fade">
+        <div class="slide">
+            <div class="ngc-bg-cover ngc-bg-fixed" style="background-image: url(views/images/landing1.png)"></div>
+        </div>
+        <div class="slide">
+            <div class="ngc-bg-cover ngc-bg-fixed" style="background-image: url(views/images/landing2.png)"></div>
+        </div>
+        <div class="slide">
+            <div class="ngc-bg-cover ngc-bg-fixed" style="background-image: url(views/images/landing3.png)"></div>
+        </div>
+    </div>
+
+    <div class="container ngc-margin-b12">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="caption">
+                    <h1 class="title">This is <br><strong>Next Gen Contacts</strong></h1>
+                    <img src="images/yeoman.png" alt="img" class="img-responsive">
+                    <h2 class="ngc-subtitle">We utilize <i>Bleeding Edge Contact List Technology</i></h2>
+                    <h2 class="ngc-subtitle">Your Phone is good for your phone contacts, <br> but <br> when your at your
+                        computer this app has <strong>everything</strong> you'll need</h2>
+                    <div class="ngc-button-box">
+                        <a class="btn btn-primary btn-lg" href="#/app-demo">Try It Now</a>
+                        <a class="btn btn-primary btn-lg" href="" onclick="learnMore()">Learn More</a>
+                    </div>
+                    <p class="ngc-description">
+                        Blazing Fast Real Time Syncing, Editing, & Creating of All your contacts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="learn-more" class="ngc-pad-top70 ngc-margin-top ngc-pad-bottom70">
+    <div class="container">
+        <h1>Our Next Gen Contact Software </h1>
+        <div class="panel panel-info">
+            <div class="panel-heading">Edit All your contacts</div>
+            <div class="panel-body">
+                With our software application you will be able to edit your contacts.
+            </div>
+        </div>
+
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Create All your contacts</h3>
+            </div>
+            <div class="panel-body">
+                Our cutting edge software allows you to create contacts in Realtime :)
+            </div>
+        </div>
+
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">All of our data is Realtime!</h3>
+            </div>
+            <div class="panel-body">
+                This means your data is always up-to-date as quickly 0.45982 secs after you've input your data! That's fast! ^_^
+            </div>
+        </div>
+
+        <p class="lead">
+            <img src="images/yeoman.png" alt="img"><br><br>
+            And there is sooo much more to come. Our developers are hard at work to improve your experience!
+        </p>
+        <p><a class="btn btn-lg btn-success" ng-href="#/app-demo">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+
+        <div class="row marketing">
+            <h4>Firebase</h4>
+            <p>
+                Firebase is a powerful API to store and sync data in realtime.
+            </p>
+
+            <h4>HTML5 Boilerplate</h4>
+            <p>
+                HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps
+                or
+                sites.
+            </p>
+
+            <h4>Angular</h4>
+            <p>
+                AngularJS is a toolset for building the framework most suited to your application development.
+            </p>
+
+            <h4>Karma</h4>
+            <p>Spectacular Test Runner for JavaScript.</p>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+
+    function learnMore(){
+        jQuery('html, body').animate({scrollTop: jQuery('#learn-more').offset().top}, 1000);
+    }
+
+    jQuery(function(){
+
+        jQuery('.ngc-bg-slider-fade').slick({
+            autoplay: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: false,
+            infinite: true,
+            arrows: false,
+            dots: false,
+            fade: true,
+            speed: 3700,
+            autoplaySpeed: 3000
+        });
+
+    });
+</script>
